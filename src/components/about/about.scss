@@ -1,0 +1,22 @@
+.profile-2 {
+    display: block;
+    margin-bottom: 10px; // Adjust as needed
+    position: relative;
+    .profile_image {
+      z-index: 3;
+      outline: 15px solid rgb(19, 9, 9);
+      &::before {
+          content: "";
+          position: absolute;
+          display: block;
+          width: 100%;
+          height: 100%; 
+          background-color: rgba(35, 7, 7, 0.644); // Adjust color as needed
+          top: 40px;
+          left: -10px;
+          z-index:2;
+        }
+        
+    }
+  }
+  
