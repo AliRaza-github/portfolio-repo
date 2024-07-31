@@ -14,7 +14,7 @@ const Header = () => {
         <div className="grid sm:grid-cols-4 gap-2 mobile:gap-10 ">
           <div className=" mobile:col-span-4 sm:col-span-3  text-start order-2 sm:order-1">
             <div className="flex items-center gap-2 ">
-              <h1 className="sm:text-5xl font-bold capitalize mobile:text-4xl">{`hi, i'm ali raza`}</h1>
+              <h1 className="sm:text-5xl font-bold capitalize mobile:text-2xl">{`hi, i'm ali raza`}</h1>
               <Image src="/images/waving-hand.gif" width={0} height={0} alt="GIF" responsive className="w-10 sm:w-12" />
             </div>
             <div>
