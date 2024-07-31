@@ -1,26 +1,63 @@
+"use client";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { IoLocationOutline } from "react-icons/io5";
 import { FaCircle } from "react-icons/fa";
 import { VscGithubAlt } from "react-icons/vsc";
 import { SlSocialFacebook } from "react-icons/sl";
 import { PiLinkedinLogoThin } from "react-icons/pi";
+import gsap from "gsap";
 import "./header.scss";
 
 const Header = () => {
+  const namePara = useRef();
+  const nameHeading = useRef();
+  const animateHeader = () => {
+    // Create a GSAP timeline
+    const tl = gsap.timeline();
+
+    // Add the paragraph animation to the timeline
+    tl.fromTo(namePara.current, { y: 20, opacity: 0 }, { y: 0, opacity: 1, duration: 2 });
+
+    // Get the text content and split it into letters
+    const textToSplitted = nameHeading.current;
+    if (textToSplitted) {
+      const text = textToSplitted.innerText;
+      const splittedText = text.split("");
+
+      // Wrap each letter in a span and update the inner HTML
+      textToSplitted.innerHTML = splittedText.map((letter) => `<span class='heading-letter' style="display: inline-block; position: relative;">${letter === " " ? "&nbsp;" : letter}</span>`).join("");
+
+      // Add the heading animation to the timeline
+      tl.fromTo(
+        ".heading-letter",
+        { opacity: 0, y: -20 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.5,
+          stagger: 0.1,
+        },
+        "-=1.5" // Start the heading animation 1.5 seconds before the paragraph animation ends
+      );
+    }
+  };
+  useEffect(() => {
+    animateHeader();
+  }, []);
   return (
     <>
       <div className=" container py-28 mobile:py-10 mobile:px-10">
         <div className="grid sm:grid-cols-4 gap-2 mobile:gap-10 ">
           <div className=" mobile:col-span-4 sm:col-span-3  text-start order-2 sm:order-1">
             <div className="flex items-center gap-2 ">
-              <h1 className="sm:text-5xl font-bold capitalize mobile:text-2xl">{`hi, i'm ali raza`}</h1>
+              <h1 className="sm:text-5xl font-bold capitalize mobile:text-2xl" ref={nameHeading}>{`hi, i'm ali raza`}</h1>
               <Image src="/images/waving-hand.gif" width={0} height={0} alt="GIF" responsive className="w-10 sm:w-12" />
             </div>
             <div>
-              <p className="text-gray-600 dark:text-gray-200">
+              <p className="text-gray-600 dark:text-gray-200" ref={namePara}>
                 {" "}
-               {` I'm Ali Raza, a Full Stack Developer specializing in the MERN stack. I build scalable web apps with React, Next.js, Redux, Node.js, Express, and MongoDB. Proficient in Tailwind CSS, Bootstrap, SCSS, JWT, JOI, RESTful APIs, Socket.IO,
+                {` I'm Ali Raza, a Full Stack Developer specializing in the MERN stack. I build scalable web apps with React, Next.js, Redux, Node.js, Express, and MongoDB. Proficient in Tailwind CSS, Bootstrap, SCSS, JWT, JOI, RESTful APIs, Socket.IO,
                 AWS, Vercel, Git, and Agile methodologies.`}
               </p>
             </div>
@@ -33,9 +70,15 @@ const Header = () => {
               <p>Lorem ipsum dolor sit amet.</p>
             </div>
             <div className="flex gap-3 pt-10 hover:">
-              <VscGithubAlt />
-              <SlSocialFacebook />
-              <PiLinkedinLogoThin />
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                <VscGithubAlt className="hover:text-gray-700 transition-colors duration-1000 transform hover:scale-150 text-2xl cursor-pointer" />
+              </a>
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                <SlSocialFacebook className="hover:text-blue-700 transition-colors duration-1000 transform hover:scale-150 text-2xl cursor-pointer" />
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                <PiLinkedinLogoThin className="hover:text-blue-600 transition-colors duration-1000 transform hover:scale-150 text-2xl cursor-pointer" />
+              </a>
             </div>
           </div>
           <div className=" mobile:col-span-4 flex  justify-center sm:col-span-1 text-center items-center order-1 sm:order-2 ">

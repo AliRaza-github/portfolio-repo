@@ -29,7 +29,14 @@ const Navbar = () => {
           </div>
           <div className="flex flex-col md:flex-row gap-5 items-center md:items-center mt-3 md:mt-0">
             <ModeToggle />
-            <button className="bg-black rounded-lg text-white px-2 py-1 capitalize">download cV</button>
+            {/* <button className="bg-black rounded-lg text-white px-2 py-1 capitalize">download cV</button> */}
+            <a
+              href="/images/AliRzaza.FullStackDeveloper.pdf" 
+              download
+              className="bg-black rounded-lg text-white px-2 py-1 capitalize"
+            >
+              download cv
+            </a>
           </div>
         </div>
       </div>
