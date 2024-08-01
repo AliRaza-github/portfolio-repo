@@ -1,0 +1,41 @@
+// components/ScrollTopButton.module.scss
+.scrollToTop {
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(12, 12, 13);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+  
+    svg {
+      font-size: 3em;
+      line-height: 10px;
+      color: #fff;
+ 
+    }
+  
+    &:hover {
+      cursor: pointer;
+      background-color: #5966af;
+    }
+  
+    &:active {
+      background-color: #555;
+    }
+  
+    &.show {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  
