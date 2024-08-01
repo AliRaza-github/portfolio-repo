@@ -47,7 +47,7 @@ const Header = () => {
   }, []);
   return (
     <>
-      <div className=" container py-28 mobile:py-10 mobile:px-10">
+      <div className=" container py-28 mobile:py-10 mobile:px-10" id="home_section">
         <div className="grid sm:grid-cols-4 gap-2 mobile:gap-10 ">
           <div className=" mobile:col-span-4 sm:col-span-3  text-start order-2 sm:order-1">
             <div className="flex items-center gap-2 ">
@@ -70,14 +70,14 @@ const Header = () => {
               <p>Lorem ipsum dolor sit amet.</p>
             </div>
             <div className="flex gap-3 pt-10 hover:">
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-                <VscGithubAlt className="hover:text-gray-700 transition-colors duration-1000 transform hover:scale-150 text-2xl cursor-pointer" />
+              <a href="https://github.com/AliRaza-github" target="_blank" rel="noopener noreferrer">
+                <VscGithubAlt className="hover:text-blue-700 transition-transform duration-500 transform hover:scale-150 text-2xl cursor-pointer hover:animate-bounce" />
               </a>
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-                <SlSocialFacebook className="hover:text-blue-700 transition-colors duration-1000 transform hover:scale-150 text-2xl cursor-pointer" />
+                <SlSocialFacebook className="hover:text-blue-700 transition-transform duration-500 transform hover:scale-150 text-2xl cursor-pointer hover:animate-bounce" />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-                <PiLinkedinLogoThin className="hover:text-blue-600 transition-colors duration-1000 transform hover:scale-150 text-2xl cursor-pointer" />
+              <a href="https://www.linkedin.com/in/aliraza62/" target="_blank" rel="noopener noreferrer">
+                <PiLinkedinLogoThin className="hover:text-blue-600 duration-500 transform hover:scale-150 text-2xl cursor-pointer transition-all  hover:animate-bounce" />
               </a>
             </div>
           </div>

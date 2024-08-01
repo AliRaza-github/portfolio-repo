@@ -28,7 +28,7 @@ The combination of React.js, Material-UI, Axios, and Redux in the development of
   },
   {
     projectImage: "/images/node.png",
-    projectName: "Backend ",
+    projectName: "E-store-backend ",
     skills: ["Node", "Express", "JWT", "joi", "NodeMailer", "Multer", "Nodemon" , "MongoDB" ,"Mongoose"],
     description: `The backend system is designed to handle various operations securely and efficiently, supporting a seamless and robust user experience. The use of JWT ensures secure authentication processes, while Joi validates incoming data to maintain the integrity and reliability of the system. NodeMailer and Multer add essential functionalities for handling emails and file uploads, respectively.
 
@@ -40,10 +40,10 @@ Overall, this backend API project leverages the power of Node.js and Express.js,
 
 const Work = () => {
   return (
-    <div className="py-10">
+    <div className="py-10" id="projects_section">
       <div className="text-center">
         <button className="bg-gray-300 py-1 px-4 rounded-full">Work</button>
-        <p className="py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, natus!</p>
+        <p className="py-4"></p>
       </div>
       {/* grid */}
       <div className="container  grid gap-10  ">

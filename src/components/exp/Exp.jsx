@@ -46,10 +46,10 @@ const experiences = [
 
 const Exp = () => {
   return (
-    <div className="bg-gray-200 py-10 dark:bg-slate-700">
+    <div className="bg-gray-200 py-10 dark:bg-slate-700" id="experience_section">
       <div className="text-center">
         <button className="bg-gray-300 rounded-full py-1 px-3 dark:text-black">Experience</button>
-        <p className="py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, a!</p>
+        <p className="py-3"></p>
       </div>
 
       <div className="grid grid-cols-1   container lg:w-1/2  mobile:w-full gap-6 cursor-pointer">

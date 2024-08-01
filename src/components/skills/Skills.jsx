@@ -31,7 +31,7 @@ const Skills = () => {
   const [hoveredSkill, setHoveredSkill] = useState(null);
 
   return (
-    <div className="py-20">
+    <div className="py-20" id="skills_section">
       <div className="text-center">
         <button className="capitalize bg-gray-300 w-28 rounded-full py-1 dark:text-black">Skills</button>
         <p className="py-5">Skilled in MERN stack, RESTful APIs, and modern front-end frameworks like React and Next.js.</p>
@@ -44,7 +44,7 @@ const Skills = () => {
           </div>
         ))}
       </div>
-      <div className="text-center text-black  dark:text-white relative">
+      <div className="text-center text-black  dark:text-white relative h-16">
         {hoveredSkill ? (
           <div className="relative">
             <div className="relative z-10" >
