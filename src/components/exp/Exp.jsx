@@ -52,9 +52,9 @@ const Exp = () => {
         <p className="py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, a!</p>
       </div>
 
-      <div className="grid grid-cols-1   container lg:w-1/2  mobile:w-full gap-6  ">
+      <div className="grid grid-cols-1   container lg:w-1/2  mobile:w-full gap-6 cursor-pointer">
         {experiences.map((exp, index) => (
-          <div key={index} className="bg-white rounded-3xl shadow-md p-6 grid sm:grid-cols-4   mobile:grid-cols-1 gap-2">
+          <div key={index} className="bg-white rounded-3xl shadow-md p-6 grid sm:grid-cols-4   mobile:grid-cols-1 gap-2 hover:scale-105 duration-500">
             <div className="col-span-1">
               <h2 className="text-xl font-bold text-violet-400  ">{exp.companyName}</h2>
             </div>

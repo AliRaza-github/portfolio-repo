@@ -17,7 +17,7 @@ Overall, the "Christian" web app combines performance, security, and aesthetic a
   {
     projectImage: "/images/skrap.png",
     projectName: "Skrap",
-    skills: ["React", "Redux", "Material UI", "react-countup", "Axios", "Sass",],
+    skills: ["React", "Redux", "Material UI", "react-countup", "Axios", "Sass"],
 
     description: `The website "Skrap" was developed with a sophisticated frontend using React.js and Material-UI, ensuring a modern and responsive user interface. React.js provides a robust foundation for building dynamic and interactive web applications, while Material-UI offers a sleek and cohesive design system with pre-built components and styles.
 For efficient interaction with RESTful APIs, Axios was employed to handle API calls. This library simplifies the process of making HTTP requests, enabling seamless communication between the frontend and backend services. The use of Axios ensures that data is fetched and updated efficiently, contributing to a smooth user experience.
@@ -27,11 +27,14 @@ To manage the application's state, Redux was implemented. Redux provides a predi
 The combination of React.js, Material-UI, Axios, and Redux in the development of "Skrap" ensures a seamless and responsive user experience. This comprehensive approach not only maintains robust data management and integration with backend services but also provides a visually appealing and user-friendly interface. The result is a high-quality web application that meets the needs of its users effectively.`,
   },
   {
-    projectImage: "/images/project.jpeg",
+    projectImage: "/images/node.png",
     projectName: "Backend ",
-    skills: ["JavaScript", "React", "Node.js", "Express", "MongoDB"],
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus doloribus commodi qui ea obcaecati corporis sequi adipisci fuga officia sunt. Necessitatibus eos quae at, animi veritatis vero et dolores eligendi, adipisci consectetur incidunt blanditiis architecto aperiam. Minima, tenetur maxime. Neque qui iure quos animi, soluta labore reiciendis repellendus fuga dolore.",
+    skills: ["Node", "Express", "JWT", "joi", "NodeMailer", "Multer", "Nodemon" , "MongoDB" ,"Mongoose"],
+    description: `The backend system is designed to handle various operations securely and efficiently, supporting a seamless and robust user experience. The use of JWT ensures secure authentication processes, while Joi validates incoming data to maintain the integrity and reliability of the system. NodeMailer and Multer add essential functionalities for handling emails and file uploads, respectively.
+
+Overall, this backend API project leverages the power of Node.js and Express.js, combined with a suite of other tools, to create a reliable, secure, and efficient backend solution for web and mobile applications.
+
+`,
   },
 ];
 
@@ -43,9 +46,9 @@ const Work = () => {
         <p className="py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, natus!</p>
       </div>
       {/* grid */}
-      <div className="container  grid gap-10 ">
+      <div className="container  grid gap-10  ">
         {projectData.map((data, index) => (
-          <div key={index} className="shadow-md  dark:outline dark:rounded-xl dark:overflow-hidden outline-slate-700 grid sm:grid-cols-2 mobile:grid-cols-1">
+          <div key={index} className="shadow-md  dark:outline dark:rounded-xl dark:overflow-hidden outline-slate-700 grid sm:grid-cols-2 mobile:grid-cols-1 ">
             <div className={`p-10 bg-gray-100 dark:bg-slate-700 flex items-center sm:${index % 2 === 0 ? "order-1" : "order-2"}`}>
               <div className=" relative w-full rounded-2xl overflow-hidden shadow-sm aspect-square">
                 <Image src={data.projectImage} fill alt="image" />
@@ -54,9 +57,9 @@ const Work = () => {
             <div className={` mobile:p-5 lg:p-20 flex flex-col gap-5  sm:${index % 2 === 0 ? "order-2" : "order-1"}`}>
               <h1 className="text-2xl font-semibold">{data.projectName}</h1>
               <p className="mobile:text-sm sm:text-lg ">{data.description}</p>
-              <div className="flex justify-start gap-3 flex-wrap">
+              <div className="flex justify-start gap-4 flex-wrap">
                 {data.skills.map((skill, skillIndex) => (
-                  <p key={skillIndex} className="text-sm  bg-gray-300  rounded-full px-3 h-[fit-content] m-0  text-black">
+                  <p key={skillIndex} className="text-sm  bg-gray-300  rounded-full px-3 h-[fit-content] m-0  text-black hover:scale-125 hover:duration-500 cursor-pointer">
                     {skill}
                   </p>
                 ))}

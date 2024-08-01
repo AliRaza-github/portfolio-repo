@@ -1,0 +1,6 @@
+.skills .col-span-1 {
+    transition: 0.4s;
+}
+.skills:has(.col-span-1:hover)>.col-span-1:not(:hover){
+opacity: 0.2;
+}
