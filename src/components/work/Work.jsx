@@ -51,7 +51,7 @@ const Work = () => {
           <div key={index} className="shadow-md  dark:outline dark:rounded-xl dark:overflow-hidden outline-slate-700 grid sm:grid-cols-2 mobile:grid-cols-1 ">
             <div className={`p-10 bg-gray-100 dark:bg-slate-700 flex items-center sm:${index % 2 === 0 ? "order-1" : "order-2"}`}>
               <div className=" relative w-full rounded-2xl overflow-hidden shadow-sm aspect-square">
-                <Image src={data.projectImage} fill alt="image" />
+                <Image src={data.projectImage} fill alt="project_Images" />
               </div>
             </div>
             <div className={` mobile:p-5 lg:p-20 flex flex-col gap-5  sm:${index % 2 === 0 ? "order-2" : "order-1"}`}>
