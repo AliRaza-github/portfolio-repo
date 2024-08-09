@@ -65,10 +65,10 @@ const Header = () => {
               <IoLocationOutline />
               <p>RYK, punjab, Pakistan </p>
             </div>
-            <div className="flex items-center gap-3 ps-1  ">
+            {/* <div className="flex items-center gap-3 ps-1  ">
               <FaCircle className="text-[8px] text-green-600 ps-0" />
               <p>Lorem ipsum dolor sit amet.</p>
-            </div>
+            </div> */}
             <div className="flex gap-3 pt-10 hover:">
               <a href="https://github.com/AliRaza-github" target="_blank" rel="noopener noreferrer">
                 <VscGithubAlt className="hover:text-blue-700 transition-transform duration-500 transform hover:scale-150 text-2xl cursor-pointer hover:animate-bounce" />
