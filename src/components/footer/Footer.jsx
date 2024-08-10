@@ -24,7 +24,7 @@ const Footer = () => {
         </div>
         <div className="flex justify-center flex-wrap items-center gap-5">
           <FaRegMessage className="sm:text-2xl mobile:text-sm" />
-          <h1 className="sm:text-3xl  mobile:text-sm font-semibold text-center">
+          <h1 className="sm:text-3xl  mobile:text-sm font-semibold text-center text-violet-400">
             <AlternatingTextAnimation text ={data.email}  />
           </h1>
           <FaMailBulk className="sm:text-2xl  mobile:text-sm" />
@@ -32,7 +32,7 @@ const Footer = () => {
 
         <div className="flex justify-center flex-wrap items-center gap-5">
           <IoCallOutline className="sm:text-2xl  mobile:text-sm" />
-          <h1 className="sm:text-3xl font-semibold  mobile:text-sm text-center">  <AlternatingTextAnimation text={data.number}/></h1>
+          <h1 className="sm:text-3xl font-semibold  mobile:text-sm text-center text-violet-400">  <AlternatingTextAnimation text={data.number}/></h1>
           <FaMailBulk className="sm:text-2xl  mobile:text-sm" />
         </div>
       </div>

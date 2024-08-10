@@ -12,23 +12,23 @@ export default function AlternatingTextAnimation({ text }) {
     timeline
       .fromTo(
         text1Ref.current,
-        { y: 5, opacity: 0 },
-        { y: 0, opacity: 1, duration: 1, ease: "power2.out" }
+        { y: 10, opacity: 0 },
+        { y: 5, opacity: 1, duration: 1, ease: "power2.out" }
       )
       .to(
         text1Ref.current,
-        { y: -5, opacity: 0, duration: 1, ease: "power2.in" },
+        { y: -10, opacity: 0, duration: 1, ease: "power2.in" },
         "+=0.5"
       )
       .fromTo(
         text2Ref.current,
-        { y: 5, opacity: 0 },
-        { y: 0, opacity: 1, duration: 1, ease: "power2.in" },
+        { y: -10, opacity: 0 },
+        { y: -20, opacity: 1, duration: 1, ease: "power2.in" },
         "-=0.5"
       )
       .to(
         text2Ref.current,
-        { y: -5, opacity: 0, duration: 1, ease: "power2.out" },
+        { y: -30, opacity: 0, duration: 1, ease: "power2.out" },
         "+=0.5"
       );
   }, []);
