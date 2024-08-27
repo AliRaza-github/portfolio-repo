@@ -12,7 +12,7 @@ import "./header.scss";
 const Header = () => {
   const namePara = useRef();
   const nameHeading = useRef();
-  const animateHeader = () => {
+  const animateHeader = () => { 
     // Create a GSAP timeline
     const tl = gsap.timeline();
 
