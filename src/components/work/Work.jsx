@@ -18,17 +18,13 @@ The app delivers a consistent experience across all devices, ensuring mobile-fri
 Overall, the "Christian" web app combines performance, security, and aesthetic appeal, providing a high-quality user experience with its use of Next.js, Bootstrap, and custom styling. This makes the app an ideal solution for its audience.`,
   },
   {
-    projectImage: ["/images/project_christian.png", "/images/christian-courses.png", "/images/christian_pricing.png", "/images/christian-quiz.png", "/images/christian-result.png"],
-    projectName: "Christian",
-    projectLink: "https://ebananas.com/",
-    skills: ["React", "Next", "Bootstrap", "OAuth", "Axios"],
-    description: `The "Christian" web app is a sophisticated project developed with Next.js, leveraging server-side rendering to enhance performance and SEO. This ensures faster page loads and better search engine visibility. The app seamlessly integrates with backend APIs, making data fetching efficient and dynamic.
-
-Designed with Bootstrap, the app guarantees a responsive and visually appealing interface. Bootstrap's components and utilities facilitate rapid development while maintaining a polished look. Custom SCSS and utility classes add a unique and branded touch.
-
-The app delivers a consistent experience across all devices, ensuring mobile-friendliness. Clean navigation and interactive components like modals and tooltips enhance user engagement. Security is a priority, with mechanisms like JWT tokens and OAuth integrations protecting user data. Best practices in data encryption ensure sensitive information remains secure.
-
-Overall, the "Christian" web app combines performance, security, and aesthetic appeal, providing a high-quality user experience with its use of Next.js, Bootstrap, and custom styling. This makes the app an ideal solution for its audience.`,
+    projectImage: ["/images/cubicle_one.png", "/images/cubicle_two.png", "/images/cubicle_three.png", "/images/cubicle_four.png"],
+    projectName: "Cubicle",
+    projectLink: "https://cubicle-cowork.vercel.app/",
+    skills: ["React", "Next", "TailWind CSS", "Redux", "Axios" , "Node js", "JWT", "Nodemon", ""],
+    description: `Cubicle is an advanced coworking space management platform designed to enhance user experience and operational efficiency. It utilizes Next.js for server-side rendering, providing a dynamic and fast front-end, while Tailwind CSS ensures a modern and responsive design. Redux Toolkit is employed for effective state management, allowing for a seamless and scalable application interface.
+On the back-end, Cubicle leverages Node.js for robust server operations and uses MongoDB with Mongoose to handle flexible and efficient data storage. Nodemon facilitates automatic server restarts during development, streamlining the coding process. JWT is implemented for secure user authentication, and NodeMailer manages email communications. Additionally, the platform includes admin roles with defined rights, enabling comprehensive management and oversight of coworking space operations.
+RBAC (Role-Based Access Control) is a method for managing user permissions and access rights in an application. In RBAC, access permissions are assigned to specific roles, and users are granted roles based on their job functions or responsibilities. This approach simplifies permission management by associating users with roles rather than individual permissions, ensuring that users only have access to resources necessary for their roles. For example, in an application like Cubicle, administrators might have rights to manage all aspects of coworking spaces, while regular users can only book spaces or view their own reservations. This structured approach helps in maintaining security and efficiency within the system.`,
   },
   {
     projectImage: ["/images/skrap-service.png", "/images/skrap-footer.png", "/images/skrapLogin.png"],
