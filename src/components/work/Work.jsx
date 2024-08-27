@@ -63,7 +63,6 @@ const Work = () => {
           <div key={index} className="shadow-md  dark:outline dark:rounded-xl dark:overflow-hidden outline-slate-700 grid sm:grid-cols-2 mobile:grid-cols-1 ">
             <div className={`p-10 bg-gray-100 dark:bg-slate-700 flex items-center sm:${index % 2 === 0 ? "order-1" : "order-2"}`}>
               <div className=" relative w-full rounded-2xl overflow-hidden shadow-sm aspect-square">
-                {/* <Image src={data.projectImage} fill alt="project_Images" /> */}
                 <CarousalLists images={data.projectImage} />
               </div>
             </div>
@@ -73,7 +72,7 @@ const Work = () => {
               <div className="flex justify-start gap-4 flex-wrap">
                 {data.skills.map((skill, skillIndex) => (
                   <p key={skillIndex} className="text-sm  bg-gray-300  rounded-full px-3 h-[fit-content] m-0  text-black hover:scale-125 hover:duration-500 cursor-pointer">
-                    {skill}
+                    {skill}                 
                   </p>
                   
                 ))}
