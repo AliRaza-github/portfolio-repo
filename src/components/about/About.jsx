@@ -63,7 +63,7 @@ const About = () => {
 
             <p className="text-black text-start pt-5 dark:text-white " ref={aboutPara}>
               {`Hi, I'm Ali Raza, a Full Stack Developer with a degree in Computer Science from PMAS Arid Agriculture University Rawalpindi. I specialize in the MERN stack, creating scalable web applications with React.js and Next.js. I leverage
-              React.js for building dynamic and interactive UIs, while Next.js enhances performance with server-side rendering and static site generation. I design responsive and visually appealing interfaces using Bootstrap and Tailwind CSS,
+              React.js for  building dynamic and interactive UIs, while Next.js enhances performance with server-side rendering and static site generation. I design responsive and visually appealing interfaces using Bootstrap and Tailwind CSS,
               ensuring a modern and consistent look across devices. My backend expertise includes Node.js, Express.js, and MongoDB, with experience in creating RESTful APIs and implementing secure authentication with JWT. I also utilize Socket.IO for
               real-time communication, AWS for cloud services, and Vercel for serverless deployment. Passionate about optimizing performance and enhancing user experiences, I stay current with best practices and trends in full stack development. I
               also value strong communication and enjoy contributing ideas through writing.`}
