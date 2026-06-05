@@ -66,7 +66,7 @@ const About = () => {
               React.js for building dynamic and interactive UIs, while Next.js enhances performance with server-side rendering and static site generation. I design responsive and visually appealing interfaces using Bootstrap and Tailwind CSS,
               ensuring a modern and consistent look across devices. My backend expertise includes Node.js, Express.js, and MongoDB, with experience in creating RESTful APIs and implementing secure authentication with JWT. I also utilize Socket.IO for
               real-time communication, AWS for cloud services, and Vercel for serverless deployment. Passionate about optimizing performance and enhancing user experiences, I stay current with best practices and trends in full stack development. I
-              also value strong  communication and enjoy contributing ideas through writing.`}
+              also value strong communication and enjoy contributing ideas through writing.`}
              
             </p>
             <lottie-player src="https://lottie.host/179d30ca-5ed4-44cd-85a9-46bf4a7f6984/ZHZhIo2kvJ.json" background="##FFFFFF" speed="1" style={{ width: "100px", height: "100px" }} loop autoplay direction="1" mode="normal"></lottie-player>
