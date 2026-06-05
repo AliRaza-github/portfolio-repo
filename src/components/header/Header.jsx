@@ -57,13 +57,12 @@ const Header = () => {
             <div>
               <p className="text-gray-600 dark:text-gray-200" ref={namePara}>
                 {" "}
-                {` I'm Ali Raza, a Full Stack Developer specializing in the MERN stack. I build scalable web apps with React, Next.js, Redux, Node.js, Express, and MongoDB. Proficient in Tailwind CSS, Bootstrap, SCSS, JWT, JOI, RESTful APIs, Socket.IO,
-                AWS, Vercel, Git, and Agile methodologies.`}
+                {`Full Stack Web Developer with 2+ years building real products people use — from enterprise healthcare platforms to AI-powered apps and e-commerce stores. Proficient in HTML5, CSS3, JavaScript, and the full MERN stack, with a strong focus on clean API integration, responsive design, and code that holds up under load. I've worked in teams and remotely, and I communicate clearly whether it's a code review comment or a stakeholder update. Looking for a role where good work actually matters.`}
               </p>
             </div>
             <div className="pt-4 flex items-center gap-2 py-1">
               <IoLocationOutline />
-              <p>RYK, punjab, Pakistan </p>
+              <p>punjab, Pakistan </p>
             </div>
             <div className="flex gap-3 pt-10 hover:">
               <a href="https://github.com/AliRaza-github" target="_blank" rel="noopener noreferrer">

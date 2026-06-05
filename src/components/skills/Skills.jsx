@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { IoLogoJavascript, IoLogoReact, IoLogoNodejs, IoLogoSass, IoLogoCss3, IoLogoGithub } from "react-icons/io5";
-import { SiExpress, SiMongodb, SiNextdotjs, SiTailwindcss, SiBootstrap, SiSocketdotio, SiHtml5, SiRedux, SiMysql } from "react-icons/si";
+import { SiExpress, SiMongodb, SiNextdotjs, SiTailwindcss, SiBootstrap, SiSocketdotio, SiHtml5, SiRedux, SiMysql, SiDocker, SiGithubactions, SiCircleci } from "react-icons/si";
 import { FaAws } from "react-icons/fa6";
 import "./skills.scss";
 
@@ -19,9 +19,12 @@ const skills = [
   { icon: <IoLogoCss3 />, name: "CSS", iconClass: "text-blue-500", description: "Style sheet language for web design" },
   { icon: <IoLogoJavascript />, name: "JavaScript", iconClass: "text-yellow-300", description: "Programming language for the web" },
   { icon: <IoLogoGithub />, name: "GitHub", iconClass: "text-black dark:text-white", description: "Platform for version control and collaboration" },
+  { icon: <SiGithubactions />, name: "GitHub Actions", iconClass: "text-blue-500", description: "Automated workflows for CI/CD on GitHub" },
+  { icon: <SiCircleci />, name: "CI/CD", iconClass: "text-cyan-500", description: "Continuous integration and deployment automation" },
   { icon: <SiRedux />, name: "Redux", iconClass: "text-violet-500", description: "State management library for JavaScript apps" },
   { icon: <SiMysql />, name: "MySQL", iconClass: "text-blue-500", description: "Relational database management system" },
   { icon: <FaAws />, name: "AWS", iconClass: "text-orange-500", description: "Cloud computing platform by Amazon" },
+  { icon: <SiDocker />, name: "Docker", iconClass: "text-blue-500", description: "Containerization platform for packaging and deploying applications" },
 ];
 
 const commonIconStyle = "text-5xl";
