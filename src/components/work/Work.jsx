@@ -48,6 +48,20 @@ Overall, this backend API project leverages the power of Node.js and Express.js,
 
 `,
   },
+   {
+    projectImage: ["/images/EHRSS-1 (1).png", "/images/EHRSS-1 (3).png", "/images/EHRSS-1 (4).png", "/images/EHRSS-1 (5).png", "/images/EHRSS-1 (6).png",
+      "/images/EHRSS-1 (7).png", "/images/EHRSS-1 (8).png", "/images/EHRSS-1 (9).png", "/images/EHRSS-1 (10).png", "/images/EHRSS-1 (11).png",
+      "/images/EHRSS-1 (12).png", "/images/EHRSS-1 (13).png",
+    ],
+    projectName: "Vista CPRS EHR ",
+    skills: ["Next.js", "Node","Tailwind css", "SSR", 'Redux'],
+    description: `Vista EHR centralizes everything about a patient — demographics, medical history, visits, and clinical data — into one unified chart, with doctors and nurses able to write, sign, and store structured clinical notes tied directly to each encounter. Appointments are managed through a drag-and-drop interactive calendar that gives staff a real-time visual overview across departments, reducing scheduling conflicts by 40%. The platform supports five distinct user roles — Admin, Doctor, Nurse, Patient, and Billing Staff — each with a completely separate interface and dataset, permissions enforced at both the API and UI level so no role ever sees what they shouldn't. Doctors can place medication, lab, and radiology orders directly inside the system, with each order tied to a specific encounter and routed to the right person for action, while a dedicated billing module connects visit records to financial entries for seamless insurance processing and invoicing. Every endpoint is protected with JWT authentication and HIPAA-aligned security patterns, ensuring sensitive patient data stays exactly where it belongs. And across all 10+ modules, a reusable DataTable component with sorting, filtering, pagination, and CSV/PDF export gives every user type a clean, fast, and actionable view of the data they need.
+
+Overall, this backend API project leverages the power of Node.js and Express.js, combined with a suite of other tools, to create a reliable, secure, and efficient backend solution for web and mobile applications.
+
+`,
+liveLink: "https://vcehr-com.vercel.app/authentication/signIn/",
+  },
 ];
 
 const Work = () => {
@@ -74,8 +88,10 @@ const Work = () => {
                   <p key={skillIndex} className="text-sm  bg-gray-300  rounded-full px-3 h-[fit-content] m-0  text-black hover:scale-125 hover:duration-500 cursor-pointer">
                     {skill}                 
                   </p>
+              
                   
                 ))}
+                     <a href={data.liveLink} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">LIVELINK</a>
               </div>
             </div>
           </div>

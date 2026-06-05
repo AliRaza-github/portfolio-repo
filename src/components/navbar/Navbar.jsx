@@ -61,23 +61,23 @@ const Navbar = () => {
           <VscThreeBars className="block md:hidden cursor-pointer" onClick={handleClick} />
         </div>
         <div className={`${show ? "max-h-screen" : "max-h-0"} md:max-h-screen md:flex overflow-hidden transition-max-height duration-700 ease-linear gap-10 w-full md:w-auto mt-4 md:mt-0`}>
-          <div className="flex flex-col md:flex-row gap-5 items-center text-lg capitalize text-gray-900 dark:text-white">
-            <div className="text-center cursor-pointer hover:bg-violet-400 hover:rounded-sm px-2 bg-gray-200 rounded-sm">
+          <div className="flex flex-col md:flex-row gap-5 items-center text-lg capitalize text-gray-900 dark:text-white ">
+            <div className="text-center cursor-pointer dark:hover:bg-violet-400 dark:hover:text-white hover:bg-violet-400 hover:rounded-sm px-2 hover:text-white bg-gray-200 rounded-sm dark:bg-white dark:text-black">
               <Link activeClass="active" to="home_section" smooth={true} offset={300} duration={500}>
                 Home
               </Link>
             </div>
-            <div className="text-center cursor-pointer hover:bg-violet-400 hover:rounded-sm px-2 bg-gray-200 rounded-sm">
+            <div className="text-center cursor-pointer dark:hover:bg-violet-400 dark:hover:text-white hover:bg-violet-400 hover:rounded-sm px-2 hover:text-white bg-gray-200 rounded-sm dark:bg-white dark:text-black">
               <Link activeClass="active" to="skills_section" spy={true} smooth={true} offset={0} duration={1000}>
                 Skills
               </Link>
             </div>
-            <div className="text-center cursor-pointer hover:bg-violet-400 hover:rounded-sm px-2 bg-gray-200 rounded-sm">
+            <div className="text-center cursor-pointer dark:hover:bg-violet-400 dark:hover:text-white hover:bg-violet-400 hover:rounded-sm  px-2 hover:text-white bg-gray-200 rounded-sm dark:bg-white dark:text-black">
               <Link activeClass="active" to="footer_section" spy={true} smooth={true} offset={0} duration={3000}>
                 Contact
               </Link>
             </div>
-            <div className="text-center cursor-pointer hover:bg-violet-400 hover:rounded-sm px-2 bg-gray-200 rounded-sm">
+            <div className="text-center cursor-pointer dark:hover:bg-violet-400 dark:hover:text-white hover:bg-violet-400 hover:rounded-sm px-2 hover:text-white bg-gray-200 rounded-sm dark:bg-white dark:text-black">
               <Link activeClass="active" to="projects_section" spy={true} smooth={true} offset={0} duration={1500}>
                 Projects
               </Link>
