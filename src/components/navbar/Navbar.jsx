@@ -85,7 +85,7 @@ const Navbar = () => {
           </div>
           <div className="flex flex-col md:flex-row gap-5 items-center md:items-center mt-3 md:mt-0">
             <ModeToggle />
-            <a href="/images/AliRaza.FullStackDeveloper.pdf" download className="bg-black rounded-lg text-white px-2 py-1 capitalize hover:bg-violet-400 hover:rounded-lg">
+            <a href="/images/AliRaza-MERN-dev.pdf" download className="bg-black rounded-lg text-white px-2 py-1 capitalize hover:bg-violet-400 hover:rounded-lg">
               download cv
             </a>
           </div>
