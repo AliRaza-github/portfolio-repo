@@ -67,7 +67,7 @@ liveLink: "https://vcehr-com.vercel.app/authentication/signIn/",
 
 const Work = () => {
   return (
-    <div className="py-10" id="projects_section">
+    <div className="py-10" id="projects_section" >
       <div className="text-center">
         <button className="bg-gray-300 py-1 px-4 rounded-full">Work</button>
         <p className="py-4"></p>
